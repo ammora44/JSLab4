@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Address Book</title>
+</head>
+<body>
+    <div class="newContact">
+    
+        <div class="title"><p>My Contacts</p></div>
+    
+        <div class="form">
+        <form>
+        <input type="text" placeholder="Name" id="name">
+        <input type="email" placeholder="Email" id="email">
+        <input type="phone" placeholder="Phone" id="phone">
+        <div class="selectMenu">
+        <select id="relation" name="relation" value="Relation">
+            <option value="Family">Family</option>
+            <option value="Friend">Friend</option>
+            <option value="Work">Coworker</option>
+            <option value="Other">Other</option>
+          </select></div>
+        <button id="add">Add</button>
+        </form>
+        </div>
+    </div>
+
+    <div id="contacts">
+        <div id="megan">
+            <div>
+            <p>Name: Megan</p>
+            <p>Email: megan@grandcircus.co</p>
+            <p>Phone: 111-222-3333</p>
+            <p>Relation: Friend</p>
+            </div>
+            <div><button class="delete"><i class="material-icons">delete</i></button></div>
+        </div>
+        <div id="julie">
+            <div>
+            <p>Name: Julie</p>
+            <p>Email: julie@grandcircus.co</p>
+            <p>Phone: 111-222-3333</p>
+            <p>Relation: Coworker</p>
+            </div>
+            <div><button class="delete"><i class="material-icons">delete</i></button></div>
+        </div>
+        <div id="newContacts">
+         
+        </div>
+    </div>
+
+    </body>
+    <script src="scripts.js"></script>
+</body>
+</html>
